@@ -45,7 +45,7 @@ _run_catpackgit() {
     $(_run_python_code 'from git import Repo
 import sys
 
-OFFICIAL_UPSTREAM_REPO = "https://github.com/ZThon-AR/nekopack"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Mactrn/ADHMOP"
 ACTIVE_BRANCH_NAME = "master"
 
 repo = Repo.init()
@@ -70,7 +70,7 @@ repo.heads[ACTIVE_BRANCH_NAME].checkout(True) ')
 
 _start_bot () {
     local zippath
-    zippath="ZedThon1.zip"
+    zippath="ALAPATH.zip"
     echo "⌭ جاري تنزيل اكواد السورس ⌭"
     wget -q $(_get_zlink) -O "$zippath"
     echo "⌭ تفريغ البيانات ⌭"
@@ -84,7 +84,7 @@ _start_bot () {
     _run_catgit
     python3 ../setup/updater.py ../requirements.txt requirements.txt
     chmod -R 755 bin
-    echo "⌭ جـاري بـدء تنصيـب زدثـــون ⌭ "
+    echo "⌭ جـاري بـدء تنصيـب العابث ⌭ "
     echo "
 
     "
